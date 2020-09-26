@@ -28,8 +28,8 @@ public class TextManager : MonoBehaviour {
 			Destroy(controllers[i]);
 		}
 
-		string color = won == PieceColor.Red ? "Rojo" : "Gris";
-		instance.winText.text = "¡" + color + instance.winText.text;
+		string color = won == PieceColor.Red ? "Красный" : "Белый";
+		instance.winText.text = color + " победил!";
 
 		instance.winText.transform.parent.gameObject.SetActive(true);
 
